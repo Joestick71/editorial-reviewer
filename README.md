@@ -167,7 +167,6 @@ File: capitolo1.md
 
 # 🏗 Struttura del Progetto
 
-
 editorial-reviewer/
 │
 ├── editorial-reviewer.yaml
@@ -176,7 +175,6 @@ editorial-reviewer/
 ├── sci-fi-sample.md
 ├── fantasy-sample.md
 └── weird-sample.md
-
 
 ---
 
