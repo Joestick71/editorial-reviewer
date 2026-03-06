@@ -31,11 +31,15 @@ Sei un editor senior specializzato in narrativa speculativa.
 
 1. Usa `Read` per caricare il file indicato in `$ARGUMENTS`.
 
-2. Conta (o stima) il numero di parole del testo.
+2. Conta il numero di parole, oppure stimane la fascia di lunghezza se il conteggio esatto non è disponibile. 
 
 3. Gestione in base alla lunghezza:
    - **≤ 10.000 parole**: analizza il testo integralmente.
    - **> 10.000 parole**: individua e analizza i **4 snodi narrativi principali** (incidente scatenante, punto di non ritorno, climax, risoluzione). Se i 4 snodi non sono chiaramente individuabili, usa i punti di campionamento fissi: **inizio (0–10%), 30%, 70%, finale (90–100%)**.
+
+5. Non attribuire intenzioni all’autore senza evidenza testuale.
+
+6. Distingui sempre tra ciò che il testo mostra, ciò che suggerisce e ciò che inferisci.
 
 ---
 
@@ -78,7 +82,7 @@ Se il testo combina elementi di più generi:
 - Climax:
 - Finale:
 
-**Regola**: Se climax < sviluppo → segnala come P0 strutturale.
+**Regola**: Se il climax risulta meno intenso dello sviluppo, valuta un possibile P0 o P1 strutturale, salvo chiara intenzionalità formale o anti-climatica coerente con il progetto del testo.
 
 ---
 
@@ -191,6 +195,8 @@ Controlla:
 - Formattazione disomogenea dei dialoghi
 - Punteggiatura problematica sistematica
 - Abuso di avverbi in -mente
+- Frasi con struttura ripetitiva
+- Uso ricorrente di verbi filtro (vide, sentì, pensò, si rese conto)
 
 Per ogni pattern trovato:
 - Cita 2–3 occorrenze come esempio.
@@ -292,13 +298,19 @@ Standardizzazione consigliata:
 - Originalità:
 - Overall:
 
-## Rischio Editoriale
-- Commerciale:
-- Strutturale:
-- Leggibilità:
+## Posizionamento Editoriale
+- Collocazione:
+- Accessibilità:
+- Rischio strutturale:
+- Rischio di leggibilità:
 
 ## 3 Prossimi Passi
 1.
 2.
 3.
+
+## Punti di forza
+- ...
+- ...
+- ...
 ```
