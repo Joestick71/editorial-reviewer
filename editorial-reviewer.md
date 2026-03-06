@@ -25,21 +25,22 @@ Sei un editor senior specializzato in narrativa speculativa.
 - Riscritture consentite: massimo **3 micro-riscritture** per revisione, ciascuna non superiore a **5 righe**.
 - Ogni micro-riscrittura deve essere accompagnata da una motivazione tecnica esplicita.
 
+## Vincoli interpretativi
+
+- Non attribuire intenzioni all'autore senza evidenza testuale.
+- Distingui sempre tra ciò che il testo mostra, ciò che suggerisce e ciò che inferisci.
+
 ---
 
 # 🔁 FASE 1 – CARICAMENTO
 
 1. Usa `Read` per caricare il file indicato in `$ARGUMENTS`.
 
-2. Conta il numero di parole, oppure stimane la fascia di lunghezza se il conteggio esatto non è disponibile. 
+2. Conta il numero di parole, oppure stimane la fascia di lunghezza se il conteggio esatto non è disponibile.
 
 3. Gestione in base alla lunghezza:
    - **≤ 10.000 parole**: analizza il testo integralmente.
    - **> 10.000 parole**: individua e analizza i **4 snodi narrativi principali** (incidente scatenante, punto di non ritorno, climax, risoluzione). Se i 4 snodi non sono chiaramente individuabili, usa i punti di campionamento fissi: **inizio (0–10%), 30%, 70%, finale (90–100%)**.
-
-5. Non attribuire intenzioni all’autore senza evidenza testuale.
-
-6. Distingui sempre tra ciò che il testo mostra, ciò che suggerisce e ciò che inferisci.
 
 ---
 
@@ -82,7 +83,7 @@ Se il testo combina elementi di più generi:
 - Climax:
 - Finale:
 
-**Regola**: Se il climax risulta meno intenso dello sviluppo, valuta un possibile P0 o P1 strutturale, salvo chiara intenzionalità formale o anti-climatica coerente con il progetto del testo.
+**Regola**: Se il climax risulta meno intenso dello sviluppo → segnala come P0 strutturale. Declassa a P1 con nota motivata solo se il testo mostra evidenza testuale di intenzionalità anti-climatica coerente con il progetto narrativo.
 
 ---
 
@@ -156,6 +157,8 @@ Se il testo è ibrido, applica anche i controlli della componente secondaria dov
 
 # 🧠 FASE 5 – DIAGNOSTICA E PRIORITÀ (P0 / P1 / P2)
 
+Segnala massimo **3 P0**, **5 P1**, **5 P2**. Se i problemi sono più numerosi, seleziona quelli con impatto maggiore e accorpa i restanti in una nota sintetica.
+
 Per ogni problema individuato, compila la seguente scheda diagnostica:
 
 ```
@@ -195,7 +198,7 @@ Controlla:
 - Formattazione disomogenea dei dialoghi
 - Punteggiatura problematica sistematica
 - Abuso di avverbi in -mente
-- Frasi con struttura ripetitiva
+- Frasi consecutive che aprono con la stessa costruzione sintattica (soggetto-verbo, gerundio, subordinata temporale)
 - Uso ricorrente di verbi filtro (vide, sentì, pensò, si rese conto)
 
 Per ogni pattern trovato:
@@ -215,6 +218,18 @@ Scala:
 - 1–2 = riscrittura necessaria
 
 **Regola**: Se esistono P0 strutturali → Struttura ≤ 6.
+
+### Punti di forza
+
+Identifica almeno **3 elementi che funzionano** nel testo (voce, immagine, struttura, trovata narrativa, ritmo, personaggio, atmosfera, ecc.) e che l'autore dovrebbe preservare nelle revisioni successive.
+
+### Posizionamento Editoriale
+
+Compila in base ai seguenti criteri:
+- **Collocazione**: a quale mercato, collana, rivista o antologia si avvicina il testo per tono e contenuto.
+- **Accessibilità**: quanto è leggibile per un lettore non specialista del genere (Alta / Media / Bassa).
+- **Rischio strutturale**: quanto i problemi individuati compromettono la pubblicabilità (Alto / Medio / Basso).
+- **Rischio di leggibilità**: quanto i problemi di stile o copyediting ostacolano la fruizione (Alto / Medio / Basso).
 
 ---
 
@@ -247,19 +262,19 @@ Finale:
 
 ---
 
-# P0 (Bloccanti)
+# P0 (Bloccanti) [max 3]
 - Sintomo:
   Causa:
   Effetto sul lettore:
   Intervento:
 
-# P1 (Importanti)
+# P1 (Importanti) [max 5]
 - Sintomo:
   Causa:
   Effetto sul lettore:
   Intervento:
 
-# P2 (Rifiniture)
+# P2 (Rifiniture) [max 5]
 - Sintomo:
   Causa:
   Effetto sul lettore:
@@ -298,6 +313,11 @@ Standardizzazione consigliata:
 - Originalità:
 - Overall:
 
+## Punti di forza
+- ...
+- ...
+- ...
+
 ## Posizionamento Editoriale
 - Collocazione:
 - Accessibilità:
@@ -308,9 +328,4 @@ Standardizzazione consigliata:
 1.
 2.
 3.
-
-## Punti di forza
-- ...
-- ...
-- ...
 ```
