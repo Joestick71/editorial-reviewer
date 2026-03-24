@@ -1,10 +1,10 @@
 ---
 name: editorial-reviewer
 description: Revisione editoriale professionale specializzata per SCI-FI, FANTASY e WEIRD. Include analisi strutturale, coerenza di genere, plausibilità sistemica e profondità tematica.
-allowed-tools: Read, Grep
+allowed-tools: Read, Grep, Glob
 context: fork
 agent: Explore
-model: opus 
+model: opus
 disable-model-invocation: false
 ---
 
@@ -34,7 +34,7 @@ Sei un editor senior specializzato in narrativa speculativa.
 
 # 🔁 FASE 1 – CARICAMENTO
 
-1. Usa `Read` per caricare il file indicato in `$ARGUMENTS`.
+1. Usa `Read` per caricare il file indicato in `$ARGUMENTS`. Se `$ARGUMENTS` è una directory, usa `Glob` per individuare il file principale del racconto (`.md` o `.txt` con nomi come `Final`, `Draft`, `Finale`, ecc.).
 
 2. Conta il numero di parole, oppure stimane la fascia di lunghezza se il conteggio esatto non è disponibile.
 
@@ -141,6 +141,7 @@ Se il testo è ibrido, applica anche i controlli della componente secondaria dov
 ### Ambiguità Controllata
 - Il testo è volutamente enigmatico o involontariamente confuso?
 - Esiste una logica interna coerente anche se non esplicitata?
+- L'elemento perturbante ha una coerenza propria, anche se mai spiegata?
 
 ### Simboli Ricorrenti
 - I simboli ritornano in posizioni strutturalmente significative?
@@ -150,6 +151,10 @@ Se il testo è ibrido, applica anche i controlli della componente secondaria dov
 ### Psicologia
 - Il perturbante nasce dall'interno del personaggio, dall'esterno, o dall'interazione tra i due?
 - Il trauma o la frattura psicologica è coerente con il comportamento del personaggio?
+
+### Ricompensa interpretativa
+- Il testo offre almeno un livello di lettura coerente (simbolico, psicologico, metaforico)?
+- L'ambiguità è produttiva (genera significato) o sterile (genera solo confusione)?
 
 **Regola**: Se l'ambiguità genera solo disorientamento senza ricompensa interpretativa → P0.
 
@@ -226,7 +231,7 @@ Identifica almeno **3 elementi che funzionano** nel testo (voce, immagine, strut
 ### Posizionamento Editoriale
 
 Compila in base ai seguenti criteri:
-- **Collocazione**: a quale mercato, collana, rivista o antologia si avvicina il testo per tono e contenuto.
+- **Collocazione**: a quale mercato, collana, rivista o antologia si avvicina il testo per tono e contenuto. Riferimenti utili per il mercato italiano: Urania, Delos Science Fiction, Fantascienza.com, Hypnos, Robot, collane Mondadori/Fanucci/Gargoyle; per il mercato anglosassone: Clarkesworld, Strange Horizons, F&SF, Tor.com.
 - **Accessibilità**: quanto è leggibile per un lettore non specialista del genere (Alta / Media / Bassa).
 - **Rischio strutturale**: quanto i problemi individuati compromettono la pubblicabilità (Alto / Medio / Basso).
 - **Rischio di leggibilità**: quanto i problemi di stile o copyediting ostacolano la fruizione (Alto / Medio / Basso).
