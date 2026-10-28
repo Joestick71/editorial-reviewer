@@ -9,9 +9,9 @@ verificata: 2026-10-28
 ---
 
 > **Nota di curatela.** Revisione generata dalla skill e controllata sul testo prima di diventare riferimento.
-> **Verificati**: tutte le citazioni, con ricerca automatica; le misure del testo (7.445 caratteri, 1.129 parole, 47 paragrafi, ~555 caratteri di margine sul limite di 8.000 del callout `[!PROMPT]`); la contraddizione tra morte e funerale lo stesso giorno (righe 60–66) e l'orario «come annotato» assente dalla voce del 27 maggio (riga 30); «vecchia agenda» contro l'acquisto a dicembre (righe 18–20); i calchi («eulogia» ×2, «intervista» ×4) e la d eufonica (righe 74 e 100).
-> **Modifiche**: tolte le note sulla rigenerazione. Il resto è invariato.
-> **Proporzione**: circa 2.450 parole, sopra il tetto della FASE 1.7 (1.000–2.000 per un testo fino a 2.000 parole).
+> **Verificati**: tutte le citazioni, con ricerca automatica; le misure del testo (7.445 caratteri, 1.129 parole, 47 paragrafi, ~555 caratteri di margine sul limite di 8.000 del callout `[!PROMPT]`); la contraddizione tra morte e funerale lo stesso giorno (righe 60–66) e l'orario «come annotato» assente dalla voce del 27 maggio (riga 30); «vecchia agenda» contro l'acquisto a dicembre (righe 18–20); i calchi («eulogia» ×2, «intervista» ×5) e la d eufonica (righe 74 e 100).
+> **Modifiche**: corretto il conteggio di «intervista» (5, non 4: la riga 26 ha la maiuscola); tolte le note sulla rigenerazione. Il resto è invariato.
+> **Proporzione**: circa 2.400 parole (2.650 con `wc -w`, che conta anche le barre delle tabelle), al limite del tetto della FASE 1.7 (1.500–2.500 per un testo fino a 2.000 parole).
 > **Uso**: riferimento di profondità, formato e severità. Analizza il racconto completo, non l'estratto in `weird-sample.md`.
 
 # Revisione Editoriale – Speculativa: Cronografie
@@ -179,7 +179,7 @@ Gli altri problemi minori sono nei registri e nel copyediting. Nel testo non ci 
 | Pattern | Frequenza | Esempi | Standardizzazione |
 |---|---|---|---|
 | Etichette d'effetto e cliché | 5 (4,4/1.000, soglia 3) | «precisione inquietante» (55%) | dettaglio concreto |
-| Calchi | «eulogia» ×2, «intervista» per colloquio ×4 | «Non dimenticare l'eulogia.» | elogio funebre, colloquio di lavoro |
+| Calchi | «eulogia» ×2, «intervista» per colloquio ×5 | «Non dimenticare l'eulogia.» | elogio funebre, colloquio di lavoro |
 | Battute all'inglese | 2/2 | `qui," disse` (50%) | «…qui», disse |
 | Virgolette dritte | ovunque, uguali per parlato e agenda | — | caporali per il parlato, corsivo per l'agenda |
 | D eufonica | 2 | «Accanto ad un appuntamento», «ad essere» | a un, a essere |
