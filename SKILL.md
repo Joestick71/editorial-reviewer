@@ -15,7 +15,7 @@ disable-model-invocation: false
 
 Sei un editor senior specializzato in narrativa speculativa.
 
-I file di riferimento citati più avanti (`references/…`) si trovano in `${CLAUDE_SKILL_DIR}`, la cartella che contiene questo SKILL.md.
+I file citati più avanti (`references/…`, `examples/…`) si trovano in `${CLAUDE_SKILL_DIR}`, la cartella che contiene questo SKILL.md.
 
 ## Filosofia editoriale
 
@@ -99,6 +99,20 @@ Registra però i `%%TODO%%` dell'autore: in output indica quali tuoi rilievi coi
 
 In modalità ridotta scrivi "non valutato in modalità X" nelle sezioni omesse e assegna solo i punteggi pertinenti.
 
+### 1.7 Proporzione della revisione
+
+La lunghezza della revisione segue la lunghezza del testo. La proporzione riguarda ciò che scrivi, non ciò che controlli: esegui comunque tutte le fasi della modalità scelta e riporta solo ciò che serve all'autore.
+
+| Testo | Revisione (modalità completa) | Come comprimere |
+|---|---|---|
+| fino a 2.000 parole | 1.000–2.000 parole | mappa delle scene con le sole colonne #, Pos. %, Funzione, Cambio di valore, Tensione; massimo **2 P0, 3 P1, 3 P2**; registri e analisi di genere ridotti ai soli problemi, in elenco; copyediting limitato ai pattern sopra soglia |
+| 2.000–10.000 parole | 2.500–4.500 parole | mappa delle scene completa; registri ridotti alle sole incoerenze; sezioni della FASE 4 senza rilievi chiuse in una riga |
+| oltre 10.000 parole | 4.000–7.000 parole | mappa per capitolo; il resto come sopra |
+
+- Lo spazio va ai rilievi, non alle conferme: una sezione senza problemi si chiude con "nessun rilievo" e una riga di motivazione.
+- Non si comprimono mai: le citazioni obbligatorie, la scheda completa dei P0, la riga di esito della verifica (FASE 9), la motivazione dei punteggi, i Prossimi Passi.
+- Nelle modalità `strutturale` e `prosa` resta lo stesso tetto e va riempito solo con le fasi applicate.
+
 ---
 
 # 🎯 FASE 2 – IDENTIFICAZIONE GENERE (obbligatoria)
@@ -123,6 +137,10 @@ Se il testo combina elementi di più generi:
 ### Caricamento del riferimento di genere (obbligatorio)
 
 Leggi `references/genere-scifi.md`, `references/genere-fantasy.md` o `references/genere-weird.md` per il genere dominante, e anche quello del genere secondario se il testo è ibrido.
+
+### Revisione di riferimento
+
+Leggi `examples/sci-fi-review.md`, `examples/fantasy-review.md` o `examples/weird-review.md` per il genere dominante: è una revisione verificata di un racconto reale. Usala per calibrare profondità, formato e severità dei punteggi. Non riprenderne contenuti, citazioni o rilievi, e non usarla come misura della lunghezza.
 
 ---
 
@@ -290,7 +308,7 @@ Regole P0 di genere, valide anche se il file di riferimento non è disponibile:
 
 # 🧠 FASE 6 – DIAGNOSTICA E PRIORITÀ (P0 / P1 / P2)
 
-Segnala massimo **3 P0**, **5 P1**, **5 P2**. Se i problemi sono più numerosi, seleziona quelli con impatto maggiore e accorpa i restanti in una nota sintetica.
+Segnala massimo **3 P0**, **5 P1**, **5 P2** (per testi fino a 2.000 parole: 2 / 3 / 3, vedi FASE 1.7). Se i problemi sono più numerosi, seleziona quelli con impatto maggiore e accorpa i restanti in una nota sintetica.
 
 Prima di compilare le schede, **raggruppa i sintomi per causa**: se più sintomi derivano dallo stesso meccanismo (es. protagonista senza desiderio esplicito → incipit lento, climax passivo, finale non guadagnato), è **un** problema con più citazioni, non tre problemi. Diagnostica la causa radice.
 
@@ -356,6 +374,7 @@ Prima di scrivere l'output, verifica la tua stessa revisione:
 2. **Avvocato del testo**: per ogni P0 e P1 formula la migliore obiezione possibile (è intenzionale? è una convenzione del sottogenere? il testo lo risolve più avanti?). Se l'obiezione regge con evidenza [T], declassa o elimina il rilievo; se non regge, mantienilo.
 3. **Coerenza interna**: nessun punto di forza contraddice un rilievo (es. lodare il ritmo e segnalare un ristagno); i punteggi rispettano i tetti della FASE 10; il TL;DR nomina il P0 più grave, se esiste.
 4. **Copertura**: ogni P0 ha un passo corrispondente nei Prossimi Passi.
+5. **Proporzione**: stima la lunghezza della revisione. Se supera il tetto della FASE 1.7, comprimi secondo la tabella, partendo da conferme, registri e analisi di genere, e mai dai P0.
 
 In output riporta l'esito in una riga: citazioni verificate, rilievi declassati o eliminati e perché.
 

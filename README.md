@@ -147,6 +147,12 @@ Utile in ottica concorsi o submission.
 
 ---
 
+# 📏 Proporzione
+
+La lunghezza della revisione segue quella del testo: 1.000–2.000 parole fino a 2.000 parole di testo, 2.500–4.500 fino a 10.000, 4.000–7.000 oltre. Tutte le fasi vengono comunque eseguite; si riduce ciò che viene riportato (conferme, registri, analisi di genere), mai i P0, le citazioni e i Prossimi Passi.
+
+---
+
 # 🧩 Testi Lunghi
 
 Il testo viene sempre letto per intero: continuità e setup/payoff lo richiedono.
@@ -203,17 +209,19 @@ editor-reviewer/
 │   ├── genere-weird.md
 │   ├── copyediting-it.md        pattern Grep, norme italiane, calchi
 │   └── rubrica-punteggi.md      descrittori di fascia per i punteggi
-└── examples/                    estratti di testi di riferimento per genere
-    ├── sci-fi-sample.md
-    ├── fantasy-sample.md
-    └── weird-sample.md
+└── examples/
+    ├── sci-fi-sample.md         estratto di "Dio è un Bug"
+    ├── sci-fi-review.md         revisione di riferimento verificata, sul racconto completo
+    ├── fantasy-sample.md        estratto di "Fra Due Mondi"
+    ├── fantasy-review.md
+    ├── weird-sample.md          estratto di "Cronografie"
+    └── weird-review.md
 ```
 
 ---
 
 # 🛠 Possibili Evoluzioni
 
-- Revisioni di riferimento (gold standard) per calibrare profondità e punteggi
 - Salvataggio della revisione nel vault, accanto al racconto
 - Confronto tra due versioni dello stesso testo (cosa è migliorato, cosa è regredito)
 - Tracciamento dei difetti ricorrenti tra racconti, collegato alle Retrospettive
