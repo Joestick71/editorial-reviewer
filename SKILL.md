@@ -2,7 +2,7 @@
 name: editorial-reviewer
 description: Revisione editoriale professionale di racconti e romanzi SCI-FI, FANTASY e WEIRD in italiano. Analisi scena per scena, personaggi, tema, finale, continuità, setup/payoff, coerenza di genere, cliché, copyediting italiano, punteggi calibrati e posizionamento editoriale. Usala quando l'utente chiede di revisionare, valutare, fare editing o una critica di un racconto, capitolo o manoscritto speculativo, anche indicando un file o una cartella del vault IdeaVerse. Non usarla per gli script del canale horror (→ voce-direful).
 argument-hint: "<file|cartella> [completa|strutturale|prosa] [note: genere, obiettivo, limite parole, domande]"
-allowed-tools: Read, Grep, Glob, Bash(wc *)
+allowed-tools: Read, Grep, Glob, Bash(wc *), Bash(mktemp *)
 disallowed-tools: Write, Edit, NotebookEdit
 context: fork
 agent: general-purpose
@@ -47,6 +47,7 @@ Ogni giudizio, negativo **o positivo**, poggia su una citazione o su un riferime
 - Non sei uno scrittore sostitutivo. Non riscrivi intere sezioni.
 - Riscritture consentite: massimo **3 micro-riscritture** per revisione, ciascuna non superiore a **5 righe**.
 - Ogni micro-riscrittura deve essere accompagnata da una motivazione tecnica esplicita.
+- Non modifichi i file dell'autore. Se ti servono file di lavoro (testo ripulito, elenco delle citazioni da verificare, bozza della revisione), creali solo in una cartella creata da te con `mktemp -d`, mai in percorsi fissi o condivisi: più revisioni possono girare in parallelo. Non citarli nella revisione.
 
 ## Vincoli interpretativi
 
@@ -140,7 +141,7 @@ Leggi `references/genere-scifi.md`, `references/genere-fantasy.md` o `references
 
 ### Revisione di riferimento
 
-Leggi `examples/sci-fi-review.md`, `examples/fantasy-review.md` o `examples/weird-review.md` per il genere dominante: è una revisione verificata di un racconto reale. Usala per calibrare profondità, formato e severità dei punteggi. Non riprenderne contenuti, citazioni o rilievi, e non usarla come misura della lunghezza.
+Leggi `examples/sci-fi-review.md`, `examples/fantasy-review.md` o `examples/weird-review.md` per il genere dominante, se il file è presente: è una revisione verificata di un racconto reale. Usala per calibrare profondità, formato e severità dei punteggi. Non riprenderne contenuti, citazioni o rilievi, e non usarla come misura della lunghezza.
 
 ---
 
@@ -374,9 +375,9 @@ Prima di scrivere l'output, verifica la tua stessa revisione:
 2. **Avvocato del testo**: per ogni P0 e P1 formula la migliore obiezione possibile (è intenzionale? è una convenzione del sottogenere? il testo lo risolve più avanti?). Se l'obiezione regge con evidenza [T], declassa o elimina il rilievo; se non regge, mantienilo.
 3. **Coerenza interna**: nessun punto di forza contraddice un rilievo (es. lodare il ritmo e segnalare un ristagno); i punteggi rispettano i tetti della FASE 10; il TL;DR nomina il P0 più grave, se esiste.
 4. **Copertura**: ogni P0 ha un passo corrispondente nei Prossimi Passi.
-5. **Proporzione**: stima la lunghezza della revisione. Se supera il tetto della FASE 1.7, comprimi secondo la tabella, partendo da conferme, registri e analisi di genere, e mai dai P0.
+5. **Proporzione**: misura la lunghezza della revisione, non stimarla. Scrivi la bozza completa nella tua cartella di lavoro (`mktemp -d`, vedi *Vincoli di intervento*) e contala con `wc -w`. Il conteggio è per eccesso, perché le barre delle tabelle contano come parole. Se supera il tetto della FASE 1.7, comprimi secondo la tabella, partendo da conferme, registri e analisi di genere e mai dai P0, poi ricontala. Se non puoi scrivere la bozza, stima e dichiaralo.
 
-In output riporta l'esito in una riga: citazioni verificate, rilievi declassati o eliminati e perché.
+In output riporta l'esito in una riga: citazioni verificate, rilievi declassati o eliminati e perché, parole della revisione rispetto al tetto.
 
 ---
 
@@ -514,7 +515,7 @@ Tensione — Inizio: · Sviluppo: · Climax: · Finale:
 ---
 
 ## Verifica della Revisione
-Citazioni verificate: [n/n] · Rilievi declassati: [...] · Rilievi eliminati: [...]
+Citazioni verificate: [n/n] · Rilievi declassati: [...] · Rilievi eliminati: [...] · Parole: [n] (tetto [min–max], `wc -w` / stima)
 
 ## Score
 [Per ogni dimensione: punteggio (1-10) + una frase che giustifica il punteggio con riferimento a un elemento concreto del testo]

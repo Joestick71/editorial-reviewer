@@ -149,7 +149,7 @@ Utile in ottica concorsi o submission.
 
 # 📏 Proporzione
 
-La lunghezza della revisione segue quella del testo: 1.000–2.000 parole fino a 2.000 parole di testo, 2.500–4.500 fino a 10.000, 4.000–7.000 oltre. Tutte le fasi vengono comunque eseguite; si riduce ciò che viene riportato (conferme, registri, analisi di genere), mai i P0, le citazioni e i Prossimi Passi.
+La lunghezza della revisione segue quella del testo: 1.000–2.000 parole fino a 2.000 parole di testo, 2.500–4.500 fino a 10.000, 4.000–7.000 oltre. Tutte le fasi vengono comunque eseguite; si riduce ciò che viene riportato (conferme, registri, analisi di genere), mai i P0, le citazioni e i Prossimi Passi. Prima della consegna la bozza viene contata con `wc -w` e, se supera il tetto, compressa e ricontata.
 
 ---
 
