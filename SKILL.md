@@ -48,6 +48,7 @@ Ogni giudizio, negativo **o positivo**, poggia su una citazione o su un riferime
 - Riscritture consentite: massimo **3 micro-riscritture** per revisione, ciascuna non superiore a **5 righe**.
 - Ogni micro-riscrittura deve essere accompagnata da una motivazione tecnica esplicita.
 - Non modifichi i file dell'autore. Se ti servono file di lavoro (testo ripulito, elenco delle citazioni da verificare, bozza della revisione), creali solo in una cartella creata da te con `mktemp -d`, mai in percorsi fissi o condivisi: più revisioni possono girare in parallelo. Non citarli nella revisione.
+- La risposta finale contiene solo la revisione nel formato obbligatorio, senza note di processo prima o dopo. Il file scelto e le porzioni con analisi di riga vanno nella riga **File**; i materiali d'autore usati vanno in *Intenzione vs Realizzazione*.
 
 ## Vincoli interpretativi
 
@@ -77,6 +78,10 @@ Non analizzare mai come testo: `Idea.md`, `Spunto.md`, `Considerazioni.md`, `Alt
 ### 1.3 Materiali d'autore (lettura differita)
 
 Individua l'officina (`* - officina.md`: premessa, immagine centrale, finale provvisorio, "di cosa parla davvero", scaletta) ma **non leggerla** prima di aver completato le FASI 2–3 e le sezioni della FASE 4 che la precedono. Del frontmatter del testo usa subito solo `genre`, `vincolo-tecnico` e `parole-obiettivo`.
+
+Con la stessa lettura differita valgono come materiali d'autore anche gli appunti nella cartella del testo (`Spunto.md`, `Considerazioni.md`, `Alternative.md`). Se il testo fa parte di un'antologia del vault (una cartella `Antologia - …` che ne contiene una copia: cercala per titolo con `Glob`), vale anche la sua `Prefazione.md`.
+
+Non leggere report editoriali o revisioni precedenti dello stesso testo (es. `Editore/Report Editoriale - …`): la diagnosi deve essere indipendente.
 
 ### 1.4 Pulizia
 
@@ -142,7 +147,7 @@ Leggi `references/genere-scifi.md`, `references/genere-fantasy.md` o `references
 
 ### Revisione di riferimento
 
-Leggi `examples/sci-fi-review.md`, `examples/fantasy-review.md` o `examples/weird-review.md` per il genere dominante, se il file è presente: è una revisione verificata di un racconto reale. Usala per calibrare profondità, formato e severità dei punteggi. Non riprenderne contenuti, citazioni o rilievi, e non usarla come misura della lunghezza.
+Leggi `examples/sci-fi-review.md`, `examples/fantasy-review.md` o `examples/weird-review.md` per il genere dominante, se il file è presente: è una revisione verificata di un racconto reale. Usala per calibrare profondità, formato e severità dei punteggi. Non riprenderne contenuti, citazioni o rilievi, e non usarla come misura della lunghezza. Se il file manca, non sostituirlo con la revisione di un altro genere: calibra solo sulla rubrica.
 
 ---
 
@@ -360,7 +365,7 @@ Usa `Grep` per individuare **pattern ricorrenti**, non micro-errori isolati. Con
 - **Ortotipografia**: punteggiatura problematica sistematica; d eufonica, accenti, apostrofi, puntini, trattini, coerenza delle virgolette.
 
 Per ogni pattern trovato:
-- Riporta la frequenza (occorrenze; per 1.000 parole quando utile).
+- Riporta la frequenza (occorrenze; per 1.000 parole quando utile), contando solo le occorrenze del pattern confermate nel contesto e tenendo ogni pattern su una riga separata (vedi `references/copyediting-it.md`, sezione D).
 - Cita 2–3 occorrenze come esempio, con posizione.
 - Indica la standardizzazione consigliata.
 

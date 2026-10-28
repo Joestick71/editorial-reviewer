@@ -30,9 +30,14 @@
 \b(c['’]era|c['’]erano|vi era|vi erano|esisteva|esistevano)\b
 ```
 
-**Emozioni nominate e cliché fisiologici** (`-i`) — ogni occorrenza nel climax è candidata.
+**Emozioni nominate** (`-i`) — il narratore dice lo stato d'animo invece di produrlo ("La curiosità vinse sulla paura", "un misto di eccitazione e terrore", "disse, sorpresa"). Conferma le occorrenze che nominano l'emozione del personaggio POV o la reazione di un altro personaggio; scarta l'emozione come argomento ("parlavamo della paura"), gli eventi ("momenti di gioia e dolore" annotati in un'agenda) e le qualità di oggetti ("una grafia rabbiosa").
 ```
-brivid|cuore in gola|cuore (mi |gli |le )?(batteva|mancò|perse un colpo)|si gelò|senza fiato|fiato sospeso|nodo alla gola|gola secca|pelle d['’]oca
+\b(paur|terror|panic|angosci|sollievo|orror|sgoment|inquietudin|ansi[ao]|rabbi|gioi|tristezz|disagi|vergogn|curiosità|ossession|confusion|sorpres|eccitazion|disperazion|stupor|incredulità)\w*
+```
+
+**Cliché fisiologici** (`-i`) — ogni occorrenza nel climax è candidata.
+```
+brivid|cuore in gola|cuore (mi |gli |le )?(batteva|martellava|mancò|perse un colpo)|gel(ò|ava|arono) (il|mi|gli|le)\s?(il )?sangue|sangue (mi |gli |le |si )*gel|si gelò|senza fiato|fiato sospeso|nodo alla gola|gola secca|pelle d['’]oca|mani tremanti|tremavano le mani|stomaco (si )?(chiuse|strinse|contorse)
 ```
 
 **Aggettivi d'effetto** (`-i`) — dicono al lettore cosa provare; nel weird oltre 3 per 1.000 parole è un segnale.
@@ -178,6 +183,8 @@ Nella tabella `\|` serve solo a non rompere la tabella Markdown: nel pattern pas
 ## D. Cosa riportare
 
 - Frequenza di ogni pattern della sezione A (occorrenze e per 1.000 parole) e le 2–3 occorrenze più rappresentative con numero di riga.
+- Ogni pattern ha la sua riga: non fondere emozioni nominate, cliché fisiologici e aggettivi d'effetto in un'unica voce.
+- La frequenza conta solo le occorrenze del pattern confermate nel contesto. I casi simili trovati in lettura senza pattern si citano a parte e non si sommano, così i conteggi restano confrontabili tra revisioni dello stesso testo.
 - Sistema di virgolette rilevato e incoerenze.
 - Violazioni ortotipografiche della sezione B raggruppate per tipo, con la forma corretta.
 - Calchi confermati dopo la verifica del contesto, con la forma italiana proposta.

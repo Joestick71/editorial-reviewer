@@ -85,7 +85,7 @@ Evita:
 9. **Stress test della revisione** — verifica delle citazioni, avvocato del testo, coerenza interna
 10. **Valutazione** — punteggi su rubrica, tetti obbligatori, posizionamento editoriale
 
-La diagnosi nasce da una lettura a freddo: l'officina e le note d'autore vengono lette solo dopo, per confrontare intenzione e realizzazione.
+La diagnosi nasce da una lettura a freddo: l'officina e le note d'autore, compresa la prefazione dell'antologia che contiene il testo, vengono lette solo dopo, per confrontare intenzione e realizzazione. I report editoriali precedenti non vengono letti, perché la diagnosi resti indipendente.
 
 ---
 
