@@ -1,7 +1,7 @@
 ---
 name: fantasy-sample
 description: Esempio per FANTASY. Estratto da "Fra 2 Mondi" – fantasy epico con cavaliere e ippogrifo, ibrido con realtà contemporanea (slipstream).
-source: /Users/davidsalvi/projects/IdeaVerse/Writings/Racconti/Fra 2 Mondi/Draft.md
+source: /Users/davidsalvi/Projects/IdeaVerse/Writings/Racconti/Fra 2 Mondi/Draft.md
 genre: fantasy
 subgenre: slipstream / portal fantasy
 rank: 0

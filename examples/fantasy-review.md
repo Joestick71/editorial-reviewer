@@ -11,8 +11,8 @@ verificata: 2026-10-28
 > **Nota di curatela.** Revisione generata dalla skill e controllata sul testo prima di diventare riferimento.
 > **Verificati**: tutte le citazioni del testo, con ricerca automatica (quelle non trovate sono solo proposte di riscrittura); le due versioni del dopo-rissa (riga 242, 416 parole, contro righe 262–276); la logica invertita della scena dell'anziana (righe 126–134 contro riga 64); le righe citate (52, 114, 124, 182, 226, 274, 292, 298, 318, 328, 390, 392); i conteggi del copyediting (54 avverbi in -mente, 9,5 ogni 1.000 parole; 75 righe con virgolette dritte; 16 "..."; "per un istante" ×7).
 > **Da verificare**: i percorsi reali delle linee ATM, che la revisione stessa segnala come ipotesi [I].
-> **Modifiche**: corretta una formulazione contraddittoria nel punteggio di Chiarezza; tolte le note sulla rigenerazione e sui file di lavoro. Il resto è invariato.
-> **Proporzione**: circa 5.100 parole, sopra il tetto della FASE 1.7 (2.500–4.500 per questa lunghezza).
+> **Modifiche**: corretta una formulazione contraddittoria nel punteggio di Chiarezza; tolte le note sulla rigenerazione e sui file di lavoro. Il copyediting è ricontato con i pattern corretti di `references/copyediting-it.md`: emozioni nominate (17) e cliché fisiologici (6) hanno una riga ciascuno, le battute all'inglese sono 46 e non 36, i possessivi superflui 8 e non 4. I titoli P0, P1 e P2 sono al secondo livello, come nel formato attuale. Il resto è invariato.
+> **Proporzione**: 5.772 parole con `wc -w` (circa 5.370 senza le barre delle tabelle), sopra il tetto della FASE 1.7 (2.500–4.500 per questa lunghezza). La revisione è stata generata prima che il conteggio con `wc -w` diventasse obbligatorio: per questo la riga di verifica non riporta le parole. Non prenderla a modello per la lunghezza.
 > **Uso**: riferimento di profondità, formato e severità. Analizza il racconto completo, non l'estratto in `fantasy-sample.md`.
 
 # Revisione Editoriale – Speculativa: Fra Due Mondi
@@ -192,7 +192,7 @@ Zona morta: 29–35%.
 
 ---
 
-# P0 (Bloccanti)
+## P0 (Bloccanti)
 
 - **[Continuità / struttura] P0-1**
   **Sintomo**: il dopo-rissa ha due versioni consecutive.
@@ -225,7 +225,7 @@ Zona morta: 29–35%.
 
   *Motivazione*: la minaccia finisce prima della violenza, e questo è il fatto mostrato che oggi manca. "Quasi una gioia" fa sentire la rabbia invece di nominarla. "Gli servì un altro colpo" sostituisce una frase che smentiva la perdita di controllo.
 
-# P1 (Importanti)
+## P1 (Importanti)
 
 - **[Struttura] P1-1**
   **Sintomo**: fino al 45% non c'è motore. "I giorni di Mattia seguivano" e il #7 sono sommari senza cambio di valore. "Teneva stretto al petto un libro che Mattia non aveva mai visto prima" resta senza seguito. La scoperta che Luce legge *La Valle di Aretra* arriva al 71%, quando la separazione è già avvenuta.
@@ -276,7 +276,7 @@ Zona morta: 29–35%.
   **Avvocato del testo**: la genericità di Aretra è diegetica. Vale per Aretra, ma non per il narratore di Milano.
   **Intervento**: tieni Aretra enfatica, perché è Mattia che scrive, e asciuga Milano. Sostituisci i cliché delle righe 114, 224, 242 e 338 con gesti concreti, per esempio cosa fanno le mani di Mattia sulla leva quando sale Luce. Il contrasto rende Aretra commovente invece che di maniera.
 
-# P2 (Rifiniture)
+## P2 (Rifiniture)
 - **[Continuità] P2-1**: in "Era la fermata di Luce Galanti." Mattia conosce il cognome senza aver mai avuto un contatto. Giustificalo (un abbonamento, una busta) o toglilo. [T] · Alta
 - **[Genere] P2-2**: "il Cristallo di Comunione che Dama Lucia gli aveva dato" compare al 92% e serve subito. Non risolve il conflitto, ma sa di oggetto di comodo. Piantalo al #17, quando Lucia se ne va. [T] · Alta
 - **[Worldbuilding] P2-3**: "Un giuramento sacro che nessun Cavaliere dell'Ordine aveva mai infranto", "Ultimo Cavaliere" e il Duca Maximus non tornano più. O li paghi (la rissa in servizio come giuramento infranto, l'ATM come Duca) o li tagli. [T] · Alta
@@ -341,13 +341,14 @@ FANTASY di cornice, con il realismo urbano come componente portante.
 |---|---|---|---|
 | Avverbi in -mente | 54 (9,5/1.000; soglia 6) | "lentamente" ×6, "leggermente" ×5, "rispose scortesemente" | dimezzare; togliere quello sulla battuta |
 | Verbi filtro | 38 (6,7/1.000), di cui "sembrava/sembrò" ×13 | "Mattia notò che Luce non era salita", "vide orrore nel suo sguardo" | eliminarli nelle scene #10–16 |
-| Emozioni nominate / cliché fisiologici | ~10 | "rimase senza fiato", "il cuore di Mattia accelerò", "fece accelerare il battito del suo cuore" | sostituirle con gesti |
-| Punteggiatura delle battute all'inglese | 36 | "Restate dietro di me, mia signora," disse | `«…», disse`, un solo uso in tutto il testo |
+| Emozioni nominate | 17 (3,0/1.000), di cui 6 nella riga 242 | "Sentì crescere dentro di sé la rabbia" (r. 196), "pieni di vergogna e confusione" (r. 242), "vide orrore nel suo sguardo" (r. 248) | sostituirle con gesti |
+| Cliché fisiologici | 6 | "rimase senza fiato" (r. 32), "il cuore di Mattia accelerò" (r. 162), "il cuore gli balzò in gola" (r. 338) | sostituirli con gesti |
+| Punteggiatura delle battute all'inglese | 46 | "Restate dietro di me, mia signora," disse | `«…», disse`, un solo uso in tutto il testo |
 | Virgolette | solo dritte (75 righe) | — | caporali o virgolette alte |
 | Paragrafo-muro | 1 (416 parole) | riga 242 | una battuta per paragrafo |
 | Interruzione della battuta | 1 | "piccolo autista di me-" | lineetta: "di me—" |
 | Ripetizioni | — | "grigia come cenere" ×2; "potenti battiti… Volando potente" | variare |
-| Possessivi superflui | 4 | "fissò i suoi occhi incandescenti" | "fissò gli occhi" |
+| Possessivi superflui | 8 | "fissò i suoi occhi incandescenti" (r. 56), "danzava nelle sue mani" (r. 238), "sul suo viso" (r. 288, 348) | "fissò gli occhi", "gli danzava tra le mani", "sul viso" |
 | Incisi, puntini, d eufonica, accenti, calchi | — | "– la voce di Dama Lucia –"; 16 "..." | coerenti e puliti |
 
 ---

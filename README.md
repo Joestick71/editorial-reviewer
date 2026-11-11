@@ -145,6 +145,8 @@ Utile in ottica concorsi o submission.
 | `strutturale` | storia, scene, personaggi, tagli; niente copyediting | prima passata di revisione |
 | `prosa` | voce, dialoghi, copyediting, con una mappa delle scene sintetica | seconda passata, a struttura stabile |
 
+Nelle modalità ridotte si assegnano solo i punteggi valutabili: in `strutturale` tutti tranne Stile/Voce; in `prosa` solo Stile/Voce e Chiarezza, senza Overall.
+
 ---
 
 # 📏 Proporzione
@@ -189,7 +191,8 @@ Se invece la skill è installata come clone separato, aggiornala con `git pull` 
 ```
 /editorial-reviewer "~/Projects/IdeaVerse/Writings/Racconti/Cronografie"
 /editorial-reviewer "~/Projects/IdeaVerse/Writings/Racconti/01 - Mos Maiorum" strutturale
-/editorial-reviewer capitolo1.md prosa weird psicologico, concorso con limite 5.000 parole: il finale è troppo spiegato?
+/editorial-reviewer capitolo1.md completa weird psicologico, concorso con limite 5.000 parole: il finale è troppo spiegato?
+/editorial-reviewer capitolo1.md prosa i dialoghi distinguono i personaggi?
 ```
 
 Racchiudi tra virgolette i percorsi che contengono spazi. Le note libere dopo la modalità (genere, obiettivo, limite di parole, domande) vengono usate nella revisione; le domande ricevono una risposta esplicita.

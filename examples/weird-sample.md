@@ -1,7 +1,7 @@
 ---
 name: weird-sample
 description: Esempio per WEIRD. Estratto da "Cronografie" – racconto weird/psicologico con agenda dal futuro e identità sdoppiata.
-source: /Users/davidsalvi/projects/IdeaVerse/Writings/Racconti/Cronografie/Draft.md
+source: /Users/davidsalvi/Projects/IdeaVerse/Writings/Racconti/Cronografie/Draft.md
 genre: weird
 subgenre: psicologico / profetico
 rank: 0

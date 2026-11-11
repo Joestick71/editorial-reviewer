@@ -1,10 +1,10 @@
 # Riferimento – Copyediting italiano
 
-**Uso**: lancia `Grep` sul file del testo con ciascun pattern (output `content` con numeri di riga, oppure `count` per la frequenza). I pattern usano la sintassi regex di ripgrep; aggiungi `-i` dove indicato. I risultati sono **candidati**: leggi il contesto e scarta i falsi positivi prima di riportarli.
+**Uso**: lancia `Grep` sul file del testo con ciascun pattern, in output `content` con i numeri di riga. Non ricavare la frequenza dall'output `count`: ripgrep conta le righe che contengono il pattern, e in un testo in prosa una riga è un paragrafo intero, quindi le occorrenze risultano sottostimate. Conta le occorrenze nell'output `content`. I pattern usano la sintassi regex di ripgrep; aggiungi `-i` dove indicato. I risultati sono **candidati**: leggi il contesto e scarta i falsi positivi prima di riportarli.
 
 **Apostrofi e virgolette**: i testi possono usare `'` oppure `’`, e `"` oppure `“ ”` oppure `« »`. I pattern usano classi come `['’]` per coprire entrambe le forme.
 
-**Soglie**: sono indicative. Riporta sempre la frequenza (occorrenze e, quando utile, per 1.000 parole) e giudica nel contesto: un pattern concentrato nel climax pesa più dello stesso pattern distribuito.
+**Soglie**: sono indicative. Di ogni pattern che riporti indica la frequenza (occorrenze e, quando utile, per 1.000 parole) e giudica nel contesto: un pattern concentrato nel climax pesa più dello stesso pattern distribuito.
 
 ---
 
@@ -30,17 +30,17 @@
 \b(c['’]era|c['’]erano|vi era|vi erano|esisteva|esistevano)\b
 ```
 
-**Emozioni nominate** (`-i`) — il narratore dice lo stato d'animo invece di produrlo ("La curiosità vinse sulla paura", "un misto di eccitazione e terrore", "disse, sorpresa"). Conferma le occorrenze che nominano l'emozione del personaggio POV o la reazione di un altro personaggio; scarta l'emozione come argomento ("parlavamo della paura"), gli eventi ("momenti di gioia e dolore" annotati in un'agenda) e le qualità di oggetti ("una grafia rabbiosa").
+**Emozioni nominate** (`-i`) — il narratore dice lo stato d'animo invece di produrlo ("La curiosità vinse sulla paura", "un misto di eccitazione e terrore", "disse, sorpresa"). Conferma le occorrenze che nominano l'emozione del personaggio POV o la reazione di un altro personaggio; scarta l'emozione come argomento ("parlavamo della paura"), gli eventi ("momenti di gioia e dolore" annotati in un'agenda, "nella confusione" come trambusto) e le qualità di oggetti ("una grafia rabbiosa").
 ```
-\b(paur|terror|panic|angosci|sollievo|orror|sgoment|inquietudin|ansi[ao]|rabbi|gioi|tristezz|disagi|vergogn|curiosità|ossession|confusion|sorpres|eccitazion|disperazion|stupor|incredulità)\w*
-```
-
-**Cliché fisiologici** (`-i`) — ogni occorrenza nel climax è candidata.
-```
-brivid|cuore in gola|cuore (mi |gli |le )?(batteva|martellava|mancò|perse un colpo)|gel(ò|ava|arono) (il|mi|gli|le)\s?(il )?sangue|sangue (mi |gli |le |si )*gel|si gelò|senza fiato|fiato sospeso|nodo alla gola|gola secca|pelle d['’]oca|mani tremanti|tremavano le mani|stomaco (si )?(chiuse|strinse|contorse)
+\b(paur|terror|panic|angosci|sollievo|orror|sgoment|inquietudin|ansi[ao]|rabbi|gioia|gioios|tristezz|disagi|vergogn|curiosità|ossession|confusion|sorpres|eccitazion|disperazion|stupor|incredulità)\w*
 ```
 
-**Aggettivi d'effetto** (`-i`) — dicono al lettore cosa provare; nel weird oltre 3 per 1.000 parole è un segnale.
+**Cliché fisiologici** (`-i`) — ogni occorrenza nel climax è candidata. Scarta le metafore che non descrivono il corpo di un personaggio ("un cuore di carta che batteva").
+```
+brivid|cuore in gola|cuore\b.{0,20}\b(batteva|martellava|mancò|perse un colpo|balzò|accelerò)|acceler\w+ il battito|battito (mi |gli |le )?acceler\w+|gel(ò|ava|arono) (il|mi|gli|le)\s?(il )?sangue|sangue (mi |gli |le |si )*gel|si gelò|senza fiato|fiato sospeso|nodo alla gola|gola secca|pelle d['’]oca|mani tremanti|tremavano le mani|stomaco (si )?(chiuse|strinse|contorse)
+```
+
+**Aggettivi d'effetto** (`-i`) — dicono al lettore cosa provare; nel weird oltre 3 per 1.000 parole è un segnale. Falsi positivi: "sinistro" come lato ("la mano sinistra", "a sinistra").
 ```
 \b(inquietant|sinistr|misterios|spaventos|terrificant|agghiacciant|angosciant)\w*|\bstran[oaie]\b
 ```
@@ -55,14 +55,14 @@ brivid|cuore in gola|cuore (mi |gli |le )?(batteva|martellava|mancò|perse un co
 \b(disse|rispose|chiese|domandò|aggiunse)\s+\w+mente\b
 ```
 
-**Gerundio in apertura di paragrafo** — tre o più paragrafi ravvicinati.
+**Gerundio in apertura di paragrafo** — tre o più paragrafi ravvicinati. Il pattern salta le parole che iniziano per Q, per non contare "Quando". Falsi positivi: nomi propri (Orlando, Fernando) e aggettivi (Stupendo, Orrendo).
 ```
-^\s*[A-ZÀ-Ù]\w*(ando|endo)\b
+^\s*[A-PR-ZÀ-Ù]\w*(ando|endo)\b
 ```
 
 **Paragrafi che aprono con articolo** — tre o più consecutivi (controlla i numeri di riga).
 ```
-^\s*(Il|Lo|La|I|Gli|Le|L['’]|Un|Una|Uno)\s
+^\s*((Il|Lo|La|I|Gli|Le|Un|Una|Uno)\s|(L|Un)['’])
 ```
 
 **Pronomi soggetto superflui** — l'italiano ha il soggetto implicito: l'abuso è un calco dall'inglese.
@@ -70,12 +70,12 @@ brivid|cuore in gola|cuore (mi |gli |le )?(batteva|martellava|mancò|perse un co
 (^|[.!?…]\s+)(Lui|Lei|Egli|Ella|Esso|Essa|Loro|Io)\s
 ```
 
-**Possessivi superflui con parti del corpo** (`-i`) — "alzò la sua mano" → "alzò la mano".
+**Possessivi superflui con parti del corpo** (`-i`) — "alzò la sua mano" → "alzò la mano"; "danzava nelle sue mani" → "gli danzava tra le mani". Il pattern trova il possessivo anche dopo una preposizione articolata ("nei suoi occhi"). Conferma le occorrenze in cui basta l'articolo o un pronome; scarta quelle in cui il possessivo serve a capire di chi si parla.
 ```
-\b(la sua|il suo|le sue|i suoi|la mia|il mio|le mie|i miei)\s+(mano|mani|testa|occhi|bocca|braccio|braccia|spalle|spalla|viso|volto|capelli|dita|labbra)\b
+\b(suo|sua|sue|suoi|mio|mia|mie|miei)\s+(mano|mani|testa|occhi|bocca|braccio|braccia|spalle|spalla|viso|volto|capelli|dita|labbra)\b
 ```
 
-**Passivi** (`-i`) — sistematici con agente noto e rilevante.
+**Passivi** (`-i`) — sistematici con agente noto e rilevante. Falsi positivi: "fu subito", "fu infinito".
 ```
 \b(venne|vennero|veniva|venivano|fu|furono)\s+\w+(at|ut|it)[oaie]\b
 ```
@@ -93,7 +93,7 @@ Ripetizioni lessicali ravvicinate, pronomi con referente ambiguo, aggettivi a ca
 
 **Punteggiatura delle battute secondo l'uso inglese** — virgola o punto dentro le virgolette prima dell'attribuzione (`"Vieni," disse`). Nell'uso italiano la punteggiatura segue la virgoletta di chiusura: `«Vieni», disse` oppure `«Vieni» disse`. Scegli una forma e applicala ovunque.
 ```
-[,.]["”»]\s+(disse|rispose|chiese|domandò|sussurrò|mormorò|aggiunse|gridò|esclamò|replicò|sibilò|ribatté)
+[,.]["”»]\s+[a-zà-ù]
 ```
 
 **Sistema di virgolette dei dialoghi** — conta separatamente le battute che aprono con ciascun segno; un solo sistema per tutto il testo (virgolette alte “ ”, caporali « », oppure lineetta — come sistema alternativo coerente). Le virgolette dritte `"` sono accettabili in bozza, non in un testo da inviare.
@@ -104,9 +104,9 @@ Ripetizioni lessicali ravvicinate, pronomi con referente ambiguo, aggettivi a ca
 ^\s*[—–]
 ```
 
-**D eufonica davanti a consonante** — errore.
+**D eufonica davanti a consonante** — errore. Il pattern non considera la h, che è muta ("ad hoc", "ed ho"). Falsi positivi: le altre locuzioni latine ("ad personam", "ad libitum").
 ```
-\b(ad|ed|od)\s+[b-df-hj-np-tv-zB-DF-HJ-NP-TV-Z]
+\b(ad|ed|od)\s+[b-df-gj-np-tv-zB-DF-GJ-NP-TV-Z]
 ```
 
 **D eufonica davanti a vocale diversa** — l'uso moderno la limita alla stessa vocale ("ad andare", "ed ecco"); restano accettate le espressioni cristallizzate "ad esempio" e "ad eccezione".
@@ -120,9 +120,9 @@ Ripetizioni lessicali ravvicinate, pronomi con referente ambiguo, aggettivi a ca
 \b(perchè|poichè|affinchè|benchè|finchè|giacchè|nè|sè|trentatrè|ventitrè)\b|\bun pò\b|\bqual['’]\s?è\b|\bE['’]\s
 ```
 
-**Accenti non italiani** — salvo nomi stranieri, in italiano su a, i, u l'accento è grave: à, ì, ù.
+**Accenti non italiani** — salvo nomi stranieri, in italiano su a, i, o, u l'accento è grave: à, ì, ò, ù.
 ```
-[áíúÁÍÚ]
+[áíóúÁÍÓÚ]
 ```
 
 **Puntini di sospensione** — tre punti oppure il carattere …, sempre lo stesso; mai quattro o più.
@@ -182,7 +182,8 @@ Nella tabella `\|` serve solo a non rompere la tabella Markdown: nel pattern pas
 
 ## D. Cosa riportare
 
-- Frequenza di ogni pattern della sezione A (occorrenze e per 1.000 parole) e le 2–3 occorrenze più rappresentative con numero di riga.
+- Esegui tutti i pattern della sezione A, ma riporta solo quelli che danno un rilievo: sopra soglia, sistematici o concentrati in una scena chiave. Per i testi brevi vale la riduzione della FASE 1.7 di SKILL.md.
+- Di ogni pattern riportato: la frequenza (occorrenze e, quando utile, per 1.000 parole) e le 2–3 occorrenze più rappresentative con la posizione (numero di riga o % del testo).
 - Ogni pattern ha la sua riga: non fondere emozioni nominate, cliché fisiologici e aggettivi d'effetto in un'unica voce.
 - La frequenza conta solo le occorrenze del pattern confermate nel contesto. I casi simili trovati in lettura senza pattern si citano a parte e non si sommano, così i conteggi restano confrontabili tra revisioni dello stesso testo.
 - Sistema di virgolette rilevato e incoerenze.

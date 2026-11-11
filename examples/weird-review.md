@@ -10,9 +10,9 @@ verificata: 2026-10-28
 
 > **Nota di curatela.** Revisione generata dalla skill e controllata sul testo prima di diventare riferimento.
 > **Verificati**: tutte le citazioni, con ricerca automatica sul racconto e sulla `Prefazione.md` dell'antologia *Interferenze*; la contraddizione tra morte e funerale lo stesso giorno (righe 30 e 60–66) e l'orario «come annotato» assente dalla voce del 27 maggio; i calchi («eulogia» ×2, «intervista» ×5); l'esistenza di *Il Catalogo del Domani* nell'antologia; il tag `claudeai` e il limite di 8.000 caratteri del callout.
-> **Modifiche**: le «etichette emotive» sono ricontate secondo `references/copyediting-it.md` (9 emozioni nominate, 3 cliché fisiologici, 3 aggettivi d'effetto: 15, non 14) e divise in tre righe; tolti il rimando a un report editoriale precedente, che la skill non deve più leggere, e le note di processo in coda. Il resto è invariato.
-> **Proporzione**: circa 2.310 parole, dentro il tetto della FASE 1.7 (1.500–2.500 per un testo fino a 2.000 parole). Con `wc -w`, che conta anche le barre delle tabelle, sono 2.530: le due righe aggiunte al copyediting hanno superato di poco le 2.490 della versione generata.
-> **Uso**: riferimento di profondità, formato, severità e lunghezza. Analizza il racconto completo, non l'estratto in `weird-sample.md`.
+> **Modifiche**: le «etichette emotive» sono ricontate secondo `references/copyediting-it.md` (9 emozioni nominate, 3 cliché fisiologici, 3 aggettivi d'effetto: 15, non 14) e divise in tre righe; tolti il rimando a un report editoriale precedente, che la skill non deve più leggere, e le note di processo in coda. Per rientrare nel tetto dopo le due righe aggiunte al copyediting sono state tolte quattro righe che ripetevano rilievi presenti altrove: il ristagno delle scene 3–5 sotto la mappa, la regola implicita nell'analisi di genere, le domande rimaste aperte nei registri e l'assenza di `%%TODO%%`. La posizione di «Un brivido mi percorse la schiena» è uniformata al 20%. I titoli P0, P1 e P2 sono al secondo livello, come nel formato attuale. Il resto è invariato.
+> **Proporzione**: 2.499 parole con `wc -w`, che conta anche le barre delle tabelle (circa 2.390 senza), dentro il tetto della FASE 1.7 (1.500–2.500 per un testo fino a 2.000 parole).
+> **Uso**: riferimento di profondità, formato e severità. Analizza il racconto completo, non l'estratto in `weird-sample.md`.
 
 # Revisione Editoriale – Speculativa: Cronografie
 
@@ -48,8 +48,6 @@ verificata: 2026-10-28
 | 9 | 79–84 | ribellione | obbedienza → rivolta (+) | 3 |
 | 10 | 86–91 | climax | mistero → spiegazione (+) | 3 |
 | 11 | 91–100 | risoluzione | eterodirezione → autonomia (+) | 2 |
-
-Le scene 3–5 (24–54%) sono un ristagno: la previsione si conferma tre volte, a tensione 2.
 
 ## Promessa vs Consegna
 L'incipit promette una domanda d'identità, chi scriva il futuro «ma non da me», e il finale consegna una morale. La coerenza è Media, perché la risposta contraddice il comportamento dell'entità (P0).
@@ -91,11 +89,11 @@ La *Prefazione* di *Interferenze* descrive «un sé che pretende di aver già vi
 ## Registri di Controllo
 **Continuità**: 28 fatti controllati, 2 incoerenze: il funerale nel giorno del decesso (P1-3) e l'agenda dell'anno in corso già «vecchia».
 **Setup / Payoff**: 12 elementi tracciati. L'identità soppressa (88%) risolve il conflitto senza setup (P0). Il «libro promesso» e il gennaio dimenticato sono orfani, e le 7:15 «come annotato nell'agenda» (62%) non erano annotate.
-**Domande del lettore**: chi scrive (13% → 88%) si chiude per spiegazione. Il gennaio dimenticato ed Elena restano aperti senza produrre nulla.
+**Domande del lettore**: chi scrive (13% → 88%) si chiude per spiegazione.
 
 ---
 
-# P0 (Bloccanti)
+## P0 (Bloccanti)
 
 - **[Coerenza di genere]** Sintomo: nell'ultimo 15% la mano spigolosa ha tre identità incompatibili: il sé conformista futuro («Sono ciò che diventerai se continui», 79%), il sé autentico soppresso («Era una parte di me, una», 88%) e «l'altro» (98%). Il narratore la ringrazia.
   Causa: la regola implicita dell'anomalia, tenuta fino all'84%, viene riscritta nel climax per far atterrare la morale. Fino a quel punto la grafia spigolosa annota eventi che si compiono comunque e pretende obbedienza («DEVI andare all'appuntamento con il dottor Mancini.»). Se è il sé autentico, la sua rabbia quando il narratore smette di obbedire non ha senso. Se è il copione, non ha senso il «Grazie». In più la grafia «originale» del 93% è quella fluida, non quella del sé soppresso.
@@ -107,7 +105,7 @@ La *Prefazione* di *Interferenze* descrive «un sé che pretende di aver già vi
 
   *Motivazione*: il contenuto coincide con il copione, ma l'autore è un altro. Il gesto mostra che la disobbedienza dell'81% dipendeva ancora dall'agenda, e il costo diventa concreto: il narratore perde la garanzia di sapere come andrà.
 
-# P1 (Importanti)
+## P1 (Importanti)
 
 - **P1-1 [Struttura]** Sintomo: la svolta e la crisi sono in sommario: «Mia madre, in lacrime. Zia Clara era morta nel sonno» (62%), «Strappai le pagine future, le bruciai» (66%).
   Causa: ci sono undici scene in 1.132 parole, e lo spazio va alle conferme (scene 3–5) invece che alle svolte.
@@ -127,7 +125,7 @@ La *Prefazione* di *Interferenze* descrive «un sé che pretende di aver già vi
   Evidenza: [T] · Confidenza: Alta
   Intervento: (a) correggi la data o trasforma l'errore in anomalia. (b) Nel primo caso annota *27 maggio, ore 7:15* e sposta il funerale; nel secondo, prima di «Durante il funerale, ritrovai in tasca», scrivi che si tenne quel pomeriggio, già tutto pronto. (c) Il mondo si piega al copione. (d) Adegua «Poi arrivò il 27 maggio.» (55%).
 
-# P2 (Rifiniture)
+## P2 (Rifiniture)
 
 - **P2-1 [Setup e payoff]** Sintomo: «Portare libro promesso.» (18%) e «La riconobbi subito, anche se non l'avevo mai vista.» (47%) piantano Elena, che poi torna in una sola riga.
   Causa: Elena serve solo a confermare la profezia.
@@ -135,19 +133,17 @@ La *Prefazione* di *Interferenze* descrive «un sé che pretende di aver già vi
   Evidenza: [T] · Confidenza: Alta
   Intervento: usa Elena nell'atto finale (micro-riscrittura del P0) e togli «promesso».
 
-- **P2-2 [Stile]** Sintomo: 15 etichette emotive (9 emozioni nominate, 3 cliché fisiologici, 3 aggettivi d'effetto: 13,3 ogni 1.000 parole), comprese quelle delle due rivelazioni principali: «Un brivido mi percorse la schiena.» (21%), «la risposta mi gelò il sangue» (86%).
+- **P2-2 [Stile]** Sintomo: 15 etichette emotive (9 emozioni nominate, 3 cliché fisiologici, 3 aggettivi d'effetto: 13,3 ogni 1.000 parole), comprese quelle delle due rivelazioni principali: «Un brivido mi percorse la schiena.» (20%), «la risposta mi gelò il sangue» (86%).
   Causa: l'effetto è annunciato invece che prodotto.
   Effetto sul lettore: le frasi più forti gli arrivano già commentate.
   Evidenza: [T] · Confidenza: Alta
   Intervento: elimina il brivido. All'86% metti un dettaglio della grafia, come la pressione della penna piantata al 13%.
 
 **Minori accorpati**: l'agenda dell'anno in corso è già «vecchia», e il gennaio dimenticato (10%) non torna più: togli i segni di vecchiaia e lega il gennaio al P0. «questa misteriosa scrittrice» (43%) dà un genere all'autore senza indizi.
-**Rilievi già noti all'autore**: nessun `%%TODO%%`.
 
 ---
 
 ## Analisi Specifica di Genere (WEIRD)
-- **Regola implicita**: il testo la rispetta fino all'84% e la viola nel climax (P0).
 - **Ricompensa interpretativa**: la lettura coerente esiste. La mano spigolosa è il copione di una vita eseguita, e il narratore, «personaggio in un romanzo già scritto», ne esce riprendendo la penna: il racconto è [S] quella scrittura. Il finale la sabota.
 
 ---
@@ -166,7 +162,7 @@ La *Prefazione* di *Interferenze* descrive «un sé che pretende di aver già vi
 | Pattern | Frequenza | Occorrenze esempio | Standardizzazione |
 |---|---|---|---|
 | Emozioni nominate | 9 (8,0/1.000) | «La curiosità vinse sulla paura» (33%), «un misto di eccitazione e terrore» (51%) | dettaglio concreto (P2-2) |
-| Cliché fisiologici | 3 | «Un brivido mi percorse la schiena» (19%), «mi gelò il sangue» (86%) | dettaglio concreto (P2-2) |
+| Cliché fisiologici | 3 | «Un brivido mi percorse la schiena» (20%), «mi gelò il sangue» (86%) | dettaglio concreto (P2-2) |
 | Aggettivi d'effetto | 3 (2,7/1.000) | «sensazione inquietante» (6%), «precisione inquietante» (51%) | dettaglio concreto (P2-2) |
 | Calchi | 7 | «Non dimenticare l'eulogia» (19%), «Intervista di lavoro» (17%) | *elogio funebre* (l'eulogia è il pane benedetto), *colloquio* |
 | Battute all'inglese, virgolette dritte | 2 su 2 | «"Ti aspettavo," risposi» (51%) | caporali e virgola dopo la chiusura |
@@ -174,7 +170,7 @@ La *Prefazione* di *Interferenze* descrive «un sé che pretende di aver già vi
 ---
 
 ## Verifica della Revisione
-Citazioni verificate: 51/51 (63 occorrenze) · Rilievi declassati: il funerale resta P1, perché non intacca il climax · Rilievi eliminati: il P0 strutturale, perché il climax (3) non scende sotto la media dello sviluppo (2,9) · Parole: 2.500 (tetto 1.500–2.500, `wc -w`)
+Citazioni verificate: 51/51 (63 occorrenze) · Rilievi declassati: il funerale resta P1, perché non intacca il climax · Rilievi eliminati: il P0 strutturale, perché il climax (3) non scende sotto la media dello sviluppo (2,9) · Parole: 2.499 (tetto 1.500–2.500, `wc -w`)
 
 ## Score
 - **Struttura**: 5/10. Le scene 3–5 ristagnano e il climax è una spiegazione.

@@ -49,3 +49,5 @@ Assegna il punteggio della fascia il cui descrittore corrisponde al testo. Usa i
 ## Overall
 
 Non è la media. Parti dal punteggio più basso tra Struttura, Personaggi e Coerenza di Genere; puoi alzarlo di 1 punto, o di 2 se Stile/Voce e Originalità sono entrambi ≥ 8. Rispetta i tetti obbligatori della FASE 10 di SKILL.md.
+
+Nelle modalità ridotte (FASE 1.6 di SKILL.md): in `strutturale` Stile/Voce non è valutato, quindi il rialzo massimo è di 1 punto; in `prosa` l'Overall non si assegna.

@@ -1,7 +1,7 @@
 ---
 name: sci-fi-sample
 description: Esempio per SCI-FI. Estratto da "Dio è un Bug" – racconto breve di fantascienza speculativa con IA teocrazia e bug narrativo.
-source: /Users/davidsalvi/projects/IdeaVerse/Writings/Racconti/Dio e' un Bug/Finale.md
+source: /Users/davidsalvi/Projects/IdeaVerse/Writings/Racconti/Dio e' un Bug/Finale.md
 genre: scifi
 rank: 8
 ---

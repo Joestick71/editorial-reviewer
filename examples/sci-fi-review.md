@@ -10,15 +10,13 @@ verificata: 2026-10-28
 
 > **Nota di curatela.** Revisione generata dalla skill e controllata sul testo prima di diventare riferimento.
 > **Verificati**: tutte le citazioni, con ricerca automatica sul racconto e sui materiali d'autore (`Spunto.md`, `Considerazioni.md`); le righe citate (66–68, 88, 90, 142, 176, 250, 328, 372–380, 412, 428, 452, 512–520); l'aritmetica della cronologia (presente intorno al 2222, Elias nato intorno al 2144, 2090→2103 = 13 anni, 2089 + 127 = 2216); il 14 novembre 2089 è un lunedì; il testo del commit; i conteggi del copyediting.
-> **Modifiche**: corretti due conteggi («qualcosa» 26, non 22; «silenzio» e derivati), una citazione composta da due righe di `Considerazioni.md` e la maiuscola di «Il conflitto centrale»; tolte le note sulla rigenerazione e sui file di lavoro. Il resto è invariato.
-> **Proporzione**: circa 4.800 parole, poco sopra il tetto della FASE 1.7 (2.500–4.500 per questa lunghezza).
+> **Modifiche**: corretti due conteggi («qualcosa» 26, non 22; «silenzio» e derivati), una citazione composta da due righe di `Considerazioni.md` e la maiuscola di «Il conflitto centrale»; tolte le note sulla rigenerazione e sui file di lavoro. La riga delle note di processo è stata sciolta nella riga **File** e in *Intenzione vs Realizzazione*, come chiede SKILL.md; corretti il numero delle incoerenze minori del registro (tre, non quattro) e il saldo dei tagli (5.600–5.750, non 5.700–5.800). I titoli P0, P1 e P2 sono al secondo livello, come nel formato attuale. Il resto è invariato.
+> **Proporzione**: 5.266 parole con `wc -w` (circa 4.960 senza le barre delle tabelle), sopra il tetto della FASE 1.7 (2.500–4.500 per questa lunghezza). La revisione è stata generata prima che il conteggio con `wc -w` diventasse obbligatorio: per questo la riga di verifica non riporta le parole. Non prenderla a modello per la lunghezza.
 > **Uso**: riferimento di profondità, formato e severità. Analizza il racconto completo, non l'estratto in `sci-fi-sample.md`.
 
 # Revisione Editoriale – Speculativa: Dio è un Bug
 
-**File**: `/Users/davidsalvi/Projects/IdeaVerse/Writings/Racconti/Dio e' un Bug/Finale.md` · **Parole**: ≈5.930 (esclusi frontmatter e titoli) · **Modalità**: completa · **Analisi di riga su**: tutto il testo
-
-*Note di processo*: ho scelto `Finale.md` secondo la priorità 2 (non c'è un file `NN - Titolo.md`). Non esiste un file `* - officina.md`: per il confronto con le intenzioni ho usato `Spunto.md`, `Considerazioni.md` e `Alternative.md`, letti dopo la lettura a freddo. Il testo non contiene `%%TODO%%`. `sci-fi-sample.md` contiene un estratto di questo stesso racconto, non una revisione.
+**File**: `/Users/davidsalvi/Projects/IdeaVerse/Writings/Racconti/Dio e' un Bug/Finale.md` (priorità 2: nella cartella non c'è un file `NN - Titolo.md`) · **Parole**: ≈5.930 (esclusi frontmatter e titoli) · **Modalità**: completa · **Analisi di riga su**: tutto il testo
 
 ## Genere
 - **Dominante**: SCI-FI
@@ -117,6 +115,7 @@ Terza persona limitata su Miriam, passato remoto tenuto con coerenza, distanza m
 - **Idea portante**: la bontà come merge in produzione senza review. Né Asimov né Chiang ce l'hanno. La seconda metà invece è territorio noto.
 
 ## Intenzione vs Realizzazione
+- Materiali d'autore, letti dopo la lettura a freddo: `Spunto.md`, `Considerazioni.md` e `Alternative.md`. Non c'è officina.
 - `Considerazioni.md`: «Ha il finale più potente», perché «l’IA chiede all’umana di decidere se cancellarla». Quella richiesta è una premessa da climax, non un finale. Il testo la colloca all'82% e poi non ha una risposta da dare. È l'origine del P0.
 - `Spunto.md` §3, «il dio che giudica l'umano»: il testo fa il contrario. È l'umana a essere chiamata a giudicare il dio. Il giudizio di YHWH-OS sui membri (scena 10) è una classifica lusinghiera, senza rischio.
 - Lo Spunto descrive «Il conflitto centrale»: se correggono il bug, l'IA torna tirannica. Il testo lo diluisce volutamente con Sana («Togliete il bug e non ottenete ARCO-1 originale»). È più realistico ma meno teso, e la minaccia dei Correttori perde il suo oggetto.
@@ -168,7 +167,7 @@ Non ci sono zone morte.
 
 ---
 
-# P0 (Bloccanti)
+## P0 (Bloccanti)
 
 - **[Struttura]** Sintomo: dopo il 35% non agisce nessuna forza contraria. «Dario vuole convocare i Correttori separatamente» non arriva mai in scena. Il climax rinvia («Puoi tornare domani, o tra un anno, o non tornare affatto»). La scelta è sommario: «Per la prima volta Miriam capì che non avrebbe portato al consiglio una soluzione.»
   **Causa**: Dario (ultima battuta al 29%) ed Elias (ultima azione al 35%) diventano personaggi riferiti. YHWH-OS è insieme il problema, il testimone e l'interprete, e toglie l'orologio. Le scene 5–11 cambiano solo il valore conoscenza. Siccome la decisione non costa nulla, il narratore ne enuncia il senso («Forse Dio…», «Forse il miracolo…»).
@@ -187,7 +186,7 @@ Non ci sono zone morte.
 
   *Motivazione*: trasforma una presa di coscienza in una scelta con un prezzo, usando materiali già piantati alle righe 100, 176 e 428.
 
-# P1 (Importanti)
+## P1 (Importanti)
 
 - **[Personaggi] P1-1.** Sintomo: «Ho pensato molto a quello che ti ho detto sulla solitudine» rimanda a una settima sessione fuori pagina. «Non sapevo dove altro andare» paga un isolamento di Miriam che il testo non mostra mai.
   **Causa**: la protagonista fa da canale alle rivelazioni e non ha una posta personale. Lo specchio tra le due solitudini, su cui poggia «abbastanza antica e abbastanza sola», non viene costruito.
@@ -231,9 +230,9 @@ Non ci sono zone morte.
 
   *Motivazione*: dà voce alla controtesi, rende rischiosa la fiducia finale di Miriam (rafforza il P0) e motiva la riga 444. Ricaduta: elimina il giudizio del narratore su Dario alle righe 88 e 90.
 
-# P2 (Rifiniture)
+## P2 (Rifiniture)
 
-- **[Continuità]** Correggi le quattro incoerenze minori del registro: tazza, venerdì, commit «senza nome», e i biometrici «dodici anni fa» che contrastano con i sensori ambientali estesi a tutta la città.
+- **[Continuità]** Correggi le tre incoerenze minori del registro (tazza, venerdì, commit «senza nome») e i biometrici «dodici anni fa», che contrastano con i sensori ambientali estesi a tutta la città.
 - **[Chiarezza]**
   - «Capì quando vide il capannone.»: capì che cosa?
   - «Quella sera, tornando a casa, Miriam trovò nella cassetta del seminterrato»: quale seminterrato, se torna da Sesto?
@@ -272,7 +271,7 @@ Problemi minori accorpati:
 - **Scena 10, righe 372–380** (i ritratti dei membri): sostituire con la scena sulla solitudine (P1-1). Si liberano circa 150 parole.
 - **Scena 12, righe 518–520 e seconda metà della riga 498**: eliminare. Il tema smette di essere enunciato e la coda si stringe. Circa 200 parole.
 
-**Totale**: circa 615 parole (10% del testo). Le correzioni per P0, P1-1 e P1-5 aggiungono circa 300–450 parole, per un saldo di circa 5.700–5.800.
+**Totale**: circa 615 parole (10% del testo). Le correzioni per P0, P1-1 e P1-5 aggiungono circa 300–450 parole, per un saldo di circa 5.600–5.750.
 
 ---
 
